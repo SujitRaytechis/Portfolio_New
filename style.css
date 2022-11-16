@@ -31,28 +31,26 @@ About
 #about{
     margin: 60px auto;
    
-    text-align: center;
 }
-#about .profile {
+.profile {
     border-radius: 50%;
-    /* width: 113px; */
-    /* margin-bottom: 13px; */
+   
     height: 550px;
     width: 500px;
     padding: 35px 1px 0px 4px;
-    /* margin: 33px 25px 18px 180px; */
+   
 }
 #about .name h2{
     font-size: 31px;
     font-weight: bold;
     text-align: left;
-    /* margin: 53px 0 0 -122px; */
+   
 }
 #about .vocation p{
     font-size: 27px;
     font-weight: bold;
     text-align: left;
-    /* margin: 40px 63px 40px -32px; */
+    
 
 }
 #about .skills{
@@ -109,14 +107,12 @@ background: #00A8AE;
 
 .btn-secondary{
     background: #00A8AE;
-
     padding: 8px 20px 7px 25px;
 
 }
 
 .gallery-text {
-   width: 200%;
-   height: 200%; 
+   
    padding: 2.5%;
 }
 .para {
@@ -124,8 +120,7 @@ background: #00A8AE;
     display: flex;
     justify-content: space-evenly;
     text-align: left;
-    margin-right:5%;
-    margin-left: 5%;
+    margin:0 5%;
     font-size: 16px;
     line-height: 32px;
     font-weight: 500;
@@ -134,11 +129,10 @@ background: #00A8AE;
 
 .icons1 {
     margin: 60px auto;
-    /* width: 100px;*/
-    /* height: 50px;  */
     margin-left: 7%;
     margin-right: 7%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     
 }
@@ -153,10 +147,8 @@ background: #00A8AE;
 
 
 .Third h3 {
-    margin: 60px auto;
-    width: 90%;
-    display: flex;
-    margin-left: 7%;
+    margin: 5% 0 5% 7%;
+    text-align: left;
 }
 
 .para-txt{
@@ -170,18 +162,102 @@ background: #00A8AE;
 
 #projects .col-md-4 .ovr-lap{
     position: absolute;
-    top: 80px;
-    margin-left: 11%;
-    
+    right: 20%;
+    top: 28%;
 }
+    
+
 
 .desc {
     display: flex;
-    justify-content: space-around;
-    margin-left: 1%;
-    margin-right: 1%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 7%
+    
 }
 
 #about .desc .name .btm {
     margin-right: 70px;
 }
+
+.col-md-8 {
+    width: 50%;
+}
+.col-md-4 {
+    width: 50%;
+}
+
+
+@media (max-width: 420px) {
+    .desc, .para {
+        flex-direction: column;
+    }
+    a.btn.btn-secondary {
+        font-size: 0.6rem;
+    }
+    .profile {
+        width: 250px;
+        height: 330px;
+        margin: 0 auto;
+    }
+    .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    /* .col-md-4 .ovr-lap {
+        position: absolute;
+        right: 35%;
+        top: 6%;
+    } */
+    .col-md-8 {
+        width: 100%;
+    }
+   
+   
+}
+@media (max-width: 700px) {
+    .desc, .para {
+        flex-direction: column;
+    }
+    a.btn.btn-secondary {
+        font-size: 0.8rem;
+    }
+    .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .col-md-4 {
+        width: 100%;
+    }
+    /* .col-md-4 .ovr-lap {
+        position: absolute;
+        right: 35%;
+        top: 6%;
+    } */
+    .col-md-8 {
+        width: 100%;
+    }
+   
+}
+@media screen  and (max-width: 900px){
+  
+        .profile{
+            max-width: 450px;
+        }
+        .row {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .col-md-4 {
+            width: 100%;
+        }
+        .col-md-8 {
+            width: 100%;
+        }
+        /* .col-md-4 .ovr-lap {
+            position: absolute;
+            right: 18%;
+            top: 12%;
+        } */
+ }
+    
